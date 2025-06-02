@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SeeMoney</string>
+    <string name="camera_x">CameraX</string>
+    <string name="camera">Kamera</string>
+    <string name="gallery">Galeri</string>
+    <string name="analyze">Lakukan Analisis</string>
+    <string name="result">Hasil Analisis</string>
+    <string name="image_classifier_failed">Image classifier gagal di jalankan, silahkan cek detail error</string>
+    <string name="empty_image_warning">Foto tidak ditemukan</string>
+    <string name="seemoney">SeeMoney</string>
+    <string name="deteksi_rup">Deteksi Rupiah, Tanpa Ragu</string>
+</resources>

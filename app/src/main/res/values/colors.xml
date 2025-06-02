@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray">#808080</color>
+    <color name="birucerah">#7AB2D3</color>
+    <color name="biruagakterangdikit">#6483B6</color>
+    <color name="biruagakgelap">#4A628A</color>
+    <color name="birugelap">#294763</color>
+    <color name="birugelapbgt">#0B2C4A</color>
+</resources>

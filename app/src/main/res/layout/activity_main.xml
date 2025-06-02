@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainActivity">
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/progressIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="400dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="191dp"
+        android:layout_height="203dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/previewImageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        app:srcCompat="@drawable/logoo" />
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintTop_toTopOf="@id/imageView2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.401"
+        app:srcCompat="@drawable/camera" />
+
+
+    <TextView
+        android:id="@+id/seemoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/seemoney"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/previewImageView" />
+
+    <TextView
+        android:id="@+id/deteksi_rup"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:lineSpacingExtra="2sp"
+        android:text="@string/deteksi_rup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seemoney" />
+
+    <ImageButton
+        android:id="@+id/galleryButton"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/button_galeri"
+        app:layout_constraintEnd_toStartOf="@+id/analyzeButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/seemoney" />
+
+    <ImageButton
+        android:id="@+id/analyzeButton"
+        android:layout_width="145dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/button_analisis"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/galleryButton"
+        app:layout_constraintTop_toBottomOf="@id/seemoney" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
